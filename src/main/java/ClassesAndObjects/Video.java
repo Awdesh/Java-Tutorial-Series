@@ -1,6 +1,8 @@
 package ClassesAndObjects;
 
-public class Video {
+import Methods.MethodVideo;
+
+public class Video extends MethodVideo {
     String title = "Sample Title";
 
     String description = "Sample Description";
@@ -23,11 +25,14 @@ public class Video {
 
     public void play() {
         System.out.println("Playing the video");
+        MethodVideo mv = new MethodVideo();
     }
 
     public void stop() {
         System.out.println("Stopping the video");
     }
+
+
 }
 
 
